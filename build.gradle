@@ -51,7 +51,7 @@ publishing {
 		// To publish to a remote repo, configure here
 		maven {
 			name = "GitHubPackages"
-			url = uri("https://maven.pkg.github.com/<OWNER>/<REPO>")
+			url = uri("https://maven.pkg.github.com/kushalpuri0817/spring-security-basic-authentication")
 			credentials {
 				username = System.getenv("USERNAME")
 				password = System.getenv("TOKEN")
