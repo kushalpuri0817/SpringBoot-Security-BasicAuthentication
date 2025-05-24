@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author DAMITH SAMARAKOON on 3/24/2020
+ * @author Kushal Puri on 3/24/2020
  */
 @RestController
 public class HelloSecurityController {

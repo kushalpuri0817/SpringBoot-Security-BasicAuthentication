@@ -1,7 +1,7 @@
 package com.damithtech.springboot.basicauthentication.model;
 
 /**
- * @author DAMITH SAMARAKOON on 3/26/2020
+ * @author Kushal Puri on 6/8/2024
  */
 
 public class User {
