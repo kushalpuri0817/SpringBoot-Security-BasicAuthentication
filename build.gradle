@@ -5,8 +5,8 @@ plugins {
 	id 'maven-publish'
 }
 
-group = 'kushalpuri0817'
-version = '0.0.1-SNAPSHOT'
+group = 'com.github.kushalpuri0817'
+version = '0.0.1' // Use a release version for GitHub Packages
 sourceCompatibility = '17'
 
 repositories {
@@ -38,17 +38,14 @@ test {
 	useJUnitPlatform()
 }
 
-// Add the publishing section below
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
 			artifact bootJar
+			artifactId = 'spring-security-basic-authentication'
 		}
 	}
 	repositories {
-		// Example: publish to local Maven repo
-		//mavenLocal()
-		// To publish to a remote repo, configure here
 		maven {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/kushalpuri0817/spring-security-basic-authentication")
