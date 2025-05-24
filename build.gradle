@@ -47,7 +47,15 @@ publishing {
 	}
 	repositories {
 		// Example: publish to local Maven repo
-		mavenLocal()
+		//mavenLocal()
 		// To publish to a remote repo, configure here
+		maven {
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/<OWNER>/<REPO>")
+			credentials {
+				username = System.getenv("USERNAME")
+				password = System.getenv("TOKEN")
+			}
+		}
 	}
 }
