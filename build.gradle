@@ -5,7 +5,7 @@ plugins {
 	id 'maven-publish'
 }
 
-group = 'kushalpuri0817'
+group = 'io.github.tanvimaira'
 version = '0.0.1'
 sourceCompatibility = '17'
 
@@ -42,9 +42,7 @@ publishing {
 	publications {
 		mavenJava(MavenPublication) {
 			artifact bootJar
-			groupId = 'kushalpuri0817'
 			artifactId = 'spring-security-basic-authentication'
-			version = '0.0.1'
 			pom {
 				name = 'spring-security-basic-authentication'
 				description = 'Spring Boot Basic Authentication Example'
@@ -55,7 +53,7 @@ publishing {
 	repositories {
 		maven {
 			name = "GitHubPackages"
-			url = uri("https://maven.pkg.github.com/kushalpuri0817/spring-security-basic-authentication")
+			url = uri("https://maven.pkg.github.com/kushalpuri0817/SpringBoot-Security-BasicAuthentication")
 			credentials {
 				username = System.getenv("USERNAME")
 				password = System.getenv("TOKEN")
