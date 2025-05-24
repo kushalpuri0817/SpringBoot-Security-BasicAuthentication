@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '3.4.5'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'maven-publish'
 }
 
 group = 'com.damithtech.springboot.basicauthentication'
@@ -35,4 +36,18 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+}
+
+// Add the publishing section below
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+	repositories {
+		// Example: publish to local Maven repo
+		mavenLocal()
+		// To publish to a remote repo, configure here
+	}
 }
