@@ -5,7 +5,7 @@ plugins {
 	id 'maven-publish'
 }
 
-group = 'com.damithtech.springboot.basicauthentication'
+group = 'kushalpuri0817'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
