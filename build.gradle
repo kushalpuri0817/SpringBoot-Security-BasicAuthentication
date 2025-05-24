@@ -5,8 +5,8 @@ plugins {
 	id 'maven-publish'
 }
 
-group = 'com.github.kushalpuri0817'
-version = '0.0.1' // Use a release version for GitHub Packages
+group = 'kushalpuri0817'
+version = '0.0.1'
 sourceCompatibility = '17'
 
 repositories {
@@ -42,7 +42,14 @@ publishing {
 	publications {
 		mavenJava(MavenPublication) {
 			artifact bootJar
+			groupId = 'kushalpuri0817'
 			artifactId = 'spring-security-basic-authentication'
+			version = '0.0.1'
+			pom {
+				name = 'spring-security-basic-authentication'
+				description = 'Spring Boot Basic Authentication Example'
+				url = 'https://github.com/kushalpuri0817/spring-security-basic-authentication'
+			}
 		}
 	}
 	repositories {
